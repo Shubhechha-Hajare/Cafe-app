@@ -1,0 +1,163 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('./assets/back_img.avif') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  min-height: 100vh;
+}
+
+.App {
+  background-color: rgba(193, 102, 11, 0.85); /* Light transparent white */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 40px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #6d4c41;
+}
+
+.menu-category {
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu-category h2 {
+  border-bottom: 2px solid #d7ccc8;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #8d6e63;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.menu-item {
+  background-color: #fff3e0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+  transform: scale(1.03);
+}
+
+.menu-item p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.menu-item span {
+  background-color: #ffcc80;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+/* src/App.css */
+.order-btn, .pay-btn {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.order-btn:hover, .pay-btn:hover {
+  background-color: #fb8c00;
+}
+
+.cart {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  margin-bottom: 8px;
+}
+
+.cart h3 {
+  margin-top: 15px;
+}
+
+.order-success {
+  text-align: center;
+  padding: 50px;
+  color: #826ce6;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.order-success h1 {
+  font-size: 48px;
+}
+
+.order-success p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.star-rating {
+  display: flex;
+  gap: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.star {
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.star.filled {
+  color: gold;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+  }
+}
